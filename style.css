@@ -1,3 +1,11 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+
 .left-section {
     background-color: rgb(16, 16, 65);
     width: 30%;
@@ -7,44 +15,23 @@
     border-right: 5px solid rgb(27, 137, 170);
 }
 
-.career-objectives {
-    color: whitesmoke;
-  }
-
-.career-objectives:hover{
-    color: rgb(49, 223, 247);
-   transition: color 3.5s ease-in;
-}
 .Profile {
     width: 150px;
-    height: 110px;
-    margin: 5% auto 10px;
+    height: 150px;
+    margin: 20px auto;
     border-radius: 50%;
     border: 5px solid lightskyblue;
     padding: 2px;
 }
 
-.personal-info-title {
-color: whitesmoke;
+.career-objectives, .personal-info-title, .certificate {
+    color: whitesmoke;
+    transition: color 0.3s ease-in;
 }
 
-.personal-info-title:hover{
-    color: rgb(49, 223, 247);
-   transition: color 3.5s ease-in;
-}
-.certificate{
-    color:whitesmoke;  
-}
-.certificate:hover{
+.career-objectives:hover, .personal-info-title:hover, .certificate:hover {
     color: rgb(49, 223, 247);
     transition: color 3.5s ease-in;
-}
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: whitesmoke;
-    margin: 0;
-    padding: 0;
 }
 
 h3 {
@@ -53,7 +40,7 @@ h3 {
     margin: 20px 0 10px;
     color: black;
     border-radius: 10px;
-    box-shadow: 0 0 15px lightblue;
+    box-shadow: 0 0 14px lightblue;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -71,22 +58,9 @@ h3 {
 
 .right-section {
     padding: 0;
-    width: 70%; 
-    @media (margin-right: 100%){}
+    width: 80%;   
 }
 
-@media (max-width: 768px) {
-    .Container {
-        flex-direction: column;
-    }
-
-    .Left, .Right {
-        width: 100%;
-        border-right: none; 
-        margin-left: 0; 
-    }
-}
-  
 ul li{
     margin: 3px 0;
 }
@@ -103,3 +77,105 @@ button{
 button:hover{
     background-color: rgb(16, 107, 150);
 }
+
+/* Media Queries */
+
+/* Tablet (Portrait) */
+@media screen and (max-width: 768px) {
+    .left-section {
+        width: 40%;
+    }
+
+    .container {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-top: 3%;
+    }
+
+    .Profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (Portrait) */
+@media screen and (max-width: 480px) {
+    .left-section {
+        width: 100%;
+        /* text-align: left; */
+        padding: 10px;
+    }
+
+    .Profile {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-top: 2%;
+        padding: 1%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Large Mobile Devices (Landscape) */
+@media screen and (max-width: 600px) {
+    .left-section {
+        width: 95%;
+        margin-left: 3px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .Profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
