@@ -1,0 +1,105 @@
+.left-section {
+    background-color: rgb(16, 16, 65);
+    width: 30%;
+    color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    border-right: 5px solid rgb(27, 137, 170);
+}
+
+.career-objectives {
+    color: whitesmoke;
+  }
+
+.career-objectives:hover{
+    color: rgb(49, 223, 247);
+   transition: color 3.5s ease-in;
+}
+.Profile {
+    width: 150px;
+    height: 110px;
+    margin: 5% auto 10px;
+    border-radius: 50%;
+    border: 5px solid lightskyblue;
+    padding: 2px;
+}
+
+.personal-info-title {
+color: whitesmoke;
+}
+
+.personal-info-title:hover{
+    color: rgb(49, 223, 247);
+   transition: color 3.5s ease-in;
+}
+.certificate{
+    color:whitesmoke;  
+}
+.certificate:hover{
+    color: rgb(49, 223, 247);
+    transition: color 3.5s ease-in;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px lightblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    background-color: whitesmoke;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 10%;  
+}
+
+.right-section {
+    padding: 0;
+    width: 70%; 
+    @media (margin-right: 100%){}
+}
+
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+    }
+
+    .Left, .Right {
+        width: 100%;
+        border-right: none; 
+        margin-left: 0; 
+    }
+}
+  
+ul li{
+    margin: 3px 0;
+}
+
+button{
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px ;
+    box-shadow: 0 0 15px rgb(76, 194, 233);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    
+}
+button:hover{
+    background-color: rgb(16, 107, 150);
+}
